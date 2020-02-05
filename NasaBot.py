@@ -8,8 +8,8 @@ import win32api
 
 class NasaIOTDBot():
 	def __init__(self):
-		self.driver = webdriver.Chrome("C:/Users/Wuelle/Desktop/Programmieren/Python Programme/WebScraping/chromedriver.exe")
-		self.img_path = "C:/Users/Wuelle/Pictures/NasaBg/daily_img.jpg"
+		self.driver = webdriver.Chrome("YourPathTo/chromedriver.exe")
+		self.img_path = "PathToTheBackgroundImage.jpg"
 
 	def GetImage(self):
 		self.driver.get("https://www.nasa.gov/multimedia/imagegallery/iotd.html")
