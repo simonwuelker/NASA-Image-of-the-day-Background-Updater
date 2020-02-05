@@ -1,7 +1,8 @@
 # NASA-Image-of-the-day-Background-Updater
-This program will automatically download NASA's "Image of the day" and set it as your Windows Desktop background.
+This program will automatically download NASA's "Image of the day" from https://www.nasa.gov/multimedia/imagegallery/iotd.html and set it as your Windows Desktop background whenever you boot up your system.
 
 You will need to:
+
 -install some Version of Google Chrome(theoretically you could replace it with some other browser but that requires some           modification in the code)(https://www.google.com/chrome/)
 
 -Download the chromedriver.exe file (https://sites.google.com/a/chromium.org/chromedriver/downloads)
