@@ -4,12 +4,16 @@ import urllib.request
 import win32con
 import win32gui
 import win32api
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
+chrome_options.add_argument("--disable-extensions")
+chrome_options.add_argument("--headless")  
 
 
 class NasaIOTDBot():
 	def __init__(self):
-		self.driver = webdriver.Chrome("YourPathTo/chromedriver.exe")
-		self.img_path = "PathToTheBackgroundImage.jpg"
+		self.driver = webdriver.Chrome("YourPathToChromedriver.exe", options = chrome_options)
+		self.img_path = "PathToYourBackgroundImage.jpg"
 
 	def GetImage(self):
 		self.driver.get("https://www.nasa.gov/multimedia/imagegallery/iotd.html")
